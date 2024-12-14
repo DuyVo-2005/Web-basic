@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS units</title>
+  <style>
+    html{
+      font-size: 10px;
+    }    
+    .box {
+      width: 50vw;
+      height: 100vh;
+      background-color: blue;
+    }
+  h1{
+    font-size: 5rem/*Thường dùng: font-size:100%, 1rem*/
+    /*font-size: em*/
+  }
+  </style>
+  <!-- 
+  .box {
+      width: 50%; /* Phụ thuộc vào thẻ chứa - không cố định */
+      height: 100px; /* Cố định khi thu phóng cửa sổ */
+      background-color: blue;
+    }
+  -->
+</head>
+<body style="font-size: 5px">
+  <div class="box"></div>
+  <h1>
+    Absolute unit
+    <ol>
+      <li>px</li>
+    </ol>
+    Relative unit
+    <ol>
+      <li>%</li>
+      <li>rem (phụ thuộc thẻ html)</li>
+      <li>em (phụ thuộc thẻ cha gần nhất chứa nó)</li>
+      <li>vh- viewport (khung nhìn) height</li>
+      <li>vw- viewport width</li>
+    </ol>
+  </h1>
+</body>
+</html>
