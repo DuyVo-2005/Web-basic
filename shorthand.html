@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>shorthand!</title>
+  <style>
+  html, body{
+      margin: 0
+    }
+    .box{
+      height: 100vh;
+      width: 100%;
+      /*background-image:
+        url(Lotte-Center-Ha-noi.png);
+      background-size: 200px;
+      background-repeat: no-repeat;*/
+      /*Viết gọn*/
+      background: url(Lotte-Center-Ha-noi.png) no-repeat center / contain;
+      /*cotain (size): hình ảnh sẽ được thu nhỏ hoặc phóng to sao cho chiều dài 
+      hoặc chiều rộng của hình ảnh vừa khớp với phần tử chứa nó, nhưng 
+      không làm biến dạng hình ảnh.*/
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

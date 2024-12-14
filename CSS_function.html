@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>CSS function!</title>
+  <style>
+    .box{
+      height: calc(50px * 2);
+      /*height: 50px;*/
+      width: 100%;
+      /*giong rgba nhung khong alpha*/
+      background: rgb(111, 88, 99);
+    }
+    a::after{
+      /*class giả*/
+      content:" ("attr(href)")"
+    }
+    .box::before{
+      /*class giả: phải có after hoặc before*/
+      content: attr(data-title);
+    }
+  </style>
+</head>
+<body>
+  <div class="box" data-title="Hello Duy"></div>
+  <a href="www.google.com">Tới trang Google:</a>
+</body>
+</html>

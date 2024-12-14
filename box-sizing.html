@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Box-sizing</title>
+  <style>
+  .box{
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    background-color: blue;
+    padding: 10px;
+    border: 2px solid #333;
+    box-sizing: border-box;/*điều chỉnh kích thước giữ nguyên 100px*100px*/
+  }
+  /*ghi đè*/
+  .box{
+    box-sizing: unset;/*or content-box*/
+  }
+  </style>
+</head>
+<body>
+  <div class="box">This is new web maked by KD</div>
+</body>
+</html>

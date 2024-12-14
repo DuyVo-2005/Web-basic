@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>background-image!</title>
+  <style>
+    html, body{
+      margin: 0/*khong dung =*/
+    }
+    .box{
+      height: 100vh;
+      width: 100%;
+      background-image:
+       /*rgba: red-green-blue-alpha: tao mau tu 3 mau(0-255) va do trong xuot alpha(0-1)*/
+       linear-gradient(0deg, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)),
+       /* tao day mau tu goc, mau bat dau, mau ket thuc */
+       url(Lotte-Center-Ha-noi.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
