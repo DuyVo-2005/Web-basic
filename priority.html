@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Priority</title>
+  <!-- 1 -> 6
+  <style>
+    h1#heading.class-heading{
+      /*priority score 1 + 100 + 10*/
+      color: brown
+    }
+    #heading{
+      /*id*/
+      color: violet
+    }
+    #heading{
+      /*equal specificity*/
+      color: gray
+    }
+    .class-heading{
+      color: orange
+    }
+    h1{
+      /*tag*/
+      color: blue;
+    }
+  </style>
+  -->
+  <!-- 1 -> 6
+  <link rel="stylesheet" href="priority .css">
+  -->
+  <!--
+  <link rel="stylesheet" href="universal selector.css">
+  -->
+  <link rel="stylesheet" href="inherited.css">
+</head>
+<body>
+  <!--
+  <h1 style="color: red" id="heading" class="class-heading">
+  -->
+  <h1 id="heading" class="class-heading">
+    Priority
+  </h1>
+  <h2>1. Internal, External
+    ngang nhau, goi sau uu tien truoc
+  </h2>
+  <h2>2. Inline 1000</h2>
+  <h2>3. #id 100</h2>
+  <h2>4. .class 10</h2>
+  <h2>5. tag 1</h2>
+  <h2>6. equal specificity</h2>
+  <h2>7. universal(chung) selector and inherited</h2>
+  <!-- inline khong thang !important
+  -> muon inline thang cho no !important
+  -->
+</body>
+</html>
