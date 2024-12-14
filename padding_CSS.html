@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>padding, border in css</title>
+  <!--
+  4 lớp: 60px*60px, padding(đệm), border(đường bao), margin(khoảng cách, không thay đổi element)
+  -->
+  <style>
+  .box{
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    float: left;/*xếp các khối từ bên trái*/
+  }
+  .box1{
+    background-color: red;
+  }
+  .box2{
+    background-color: blue;
+  }
+  .box3{
+    background-color: green;
+    padding: 15px 20px 15px 25px;
+    /*Viet tat
+    4 so: kim dong ho: tren, phai, duoi, trai
+    3 so: tren, phai trai, duoi
+    2 so: tren duoi, phai trai
+    1 so: tren duoi, phai trai
+    Viet day du:
+    padding-left/right/top/bottom: xpx
+    */
+    border-width: 1px;
+    border-style: solid; /*or dashed*/
+    border-color: #333;
+    /*Viet cụ thể: border-top-width>
+    /*Viết ngắn - border: 10px solid #333 */
+    /*Không chỉ định width của solid: Defaul 2px */
+    /*margin: 20px*/
+    /*tham số giống margin*/
+    /*margin: 10px 5px;*/
+    margin-top: 10px;    
+  }
+  </style>
+</head>
+<body>
+  <div class="box box1">Box 1</div>
+  <div class="box box2">Box 2</div>
+  <div class="box box3">Box 3</div>
+</body>
+</html>
