@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>CSS pseudo classes!</title>
+  <style>
+    .box{
+      height: 100px;
+      width: 100%;
+      background-color: black;
+    }
+    h1:active{
+      color: red
+    }
+    /*ex: use in link*/
+    .box:hover{
+      background-color: green
+    }
+    li:first-child{
+      color: brown
+    }/*use in menu*/
+    /*li is child of ul*/
+    li:last-child{
+      color: purple;
+      font-size: 50px;
+    }/*use in menu*/
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <h1>
+    CSS pseudo classes
+  </h1>
+  <ul>
+    <li>:root (tham chiếu tới thẻ gốc - html)</li>
+    <li>:hover (kích hoạt khi di chuột lên)</li>
+    <li>:active (thay đổi khi ấn giữ)</li>
+    <li>:first-child</li>
+    <li>:last-child</li>
+    <li>...</li>
+  </ul>
+</body>
+</html>
