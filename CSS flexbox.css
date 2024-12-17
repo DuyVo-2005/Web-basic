@@ -1,0 +1,93 @@
+.nav{
+  min-height: 45px;
+  background-color: green;
+  display: flex;/*default: row*/
+  justify-content: space-between;
+}
+.nav-list{
+  padding-left: 0;
+  margin: auto 16px;
+}
+.nav-item{
+  color: #fff;
+  margin: 0 8px;
+  display: inline-block;
+  list-style: none;
+}
+.form-container{
+  max-width: 720px;
+  padding: 32px;
+  margin: 36px auto 0 auto;
+  background-color: #fff;
+}
+.form-row{
+  padding: 8px 0;
+  display: flex;
+}
+.form-label{
+  min-width: 90px;
+}
+.form-input{
+  flex: 1;/*>= 1 chiếm hết item*/
+}
+.column-layout{
+  margin-top: 36px;
+  padding: 12px 0;
+  background-color: #fff;
+  display: flex;
+  /*Đảo chiều main axis sang dọc*/
+}
+.column-item{
+  padding: 0 16px;
+}
+/*tỷ lệ 3 cột 1:3:1*/
+.sidebar-one{
+  /*thanh điều hướng*/
+  flex: 1;
+}
+.main-column{
+  flex: 3;
+}
+.sidebar-two{
+  /*quảng cáo*/
+  flex: 1;
+}
+.feature-layout{
+  margin-top: 36px;
+  display: flex;
+  /*Căn ra 2 mép trái phải
+  justify-content: space-between;
+  */
+  /*Căn các khoảng xung quanh bằng nhau*/
+  justify-content: space-around;
+  /*Căn các khoảng bằng nhau
+  justify-content: space-evenly;
+  */
+}
+.feature-item{
+  padding: 12px 16px;
+  margin-top: 16px;
+  flex-basis: 30%;
+}
+.feature-item:nth-child(1){
+  background-color: aqua;
+}
+.feature-item:nth-child(2){
+  background-color: gold;
+}
+.feature-item:nth-child(3){
+  background-color: greenyellow;
+}
+.wrap-layout{
+  background-color: #fff;
+  margin-top: 36px;
+  padding: 12px 0 32 px 0;
+  display: flex;
+}
+.wrap-layout-item{
+  width: 148px;
+  height: 90px;
+  color: #fff;
+  
+  background-color: red;
+}
