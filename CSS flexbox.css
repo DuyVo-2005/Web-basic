@@ -44,13 +44,16 @@
 .sidebar-one{
   /*thanh điều hướng*/
   flex: 1;
+  order: 3;/*thứ tự tính từ main start đến main end*/
 }
 .main-column{
   flex: 3;
+  order: 2;
 }
 .sidebar-two{
   /*quảng cáo*/
   flex: 1;
+  order: 1;
 }
 .feature-layout{
   margin-top: 36px;
@@ -58,11 +61,18 @@
   /*Căn ra 2 mép trái phải
   justify-content: space-between;
   */
+  flex-direction: column;/*đặt cho phone*/
   /*Căn các khoảng xung quanh bằng nhau*/
   justify-content: space-around;
   /*Căn các khoảng bằng nhau
   justify-content: space-evenly;
   */
+}
+/*PC, tablet*/
+@media(min-width: 740px){
+  .feature-layout{
+    flex-direction: row;
+  }
 }
 .feature-item{
   padding: 12px 16px;
@@ -171,3 +181,9 @@
   background-color: rgb(192,210,196);
   flex: 1;
 }
+/*
+flex: 1 <-> flex-grow: 1; flex-shrink: 1; flex-basis: 1;
+---------------
+flex-flow: row wrap <-> flex-direction: row; flex-wrap: wrap;
+*/
+/*Tham khảo thêm: flex css mozilla*/
