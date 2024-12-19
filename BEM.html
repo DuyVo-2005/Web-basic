@@ -1,0 +1,64 @@
+<!--
+# BEM - Block element modifier
+Tiêu chuẩn đặt tên class khi viết CSS
+# Meaning:
+- Block: khối - tag cha
+- Element: thành phần trong khối
+- Modifier: bổ sung ý nghĩa cho Block và Element (as CSS)
+# Why use BEM?
+- Each person names the class in a different way.
+- Member set duplicate class, CSS overlaps each other
+# Syntax:
+- .block
+- .block__element
+
+- .block--modifier
+- .block__element--modifier
+# Application
+- build layout website
+- build element on website
+# Advantage:
+- Clearly
+- Reuse easily
+- Easy teamwork
+- Module
+# Disadvantage:
+- long name
+# When use BEM
+- Project has many members
+- Large project, many pages, many elements on UI
+# Practice:
+- Make button
++ Enable: pointer, hover effect
++ Disable: arrow (default) (mũi tên), no effect
+- Make message
+- Make element on website: layout,...
+-->
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>BEM!</title>
+  <link rel="stylesheet" href="./BEM.css">
+</head>
+<body>
+  <div>
+    <button class="btn btn--success btn--size-small">GO TO THE NEXT APPROVAL</button>
+    <!--<button class="btn btn--warn btn--disable">OK</button>-->
+    <button class="btn btn--warn btn--size-small">OK</button>
+    <button class="btn btn--danger btn--size-small">TRY AGAIN</button>
+  </div>
+  <div>
+    <button class="btn btn--success">GO TO THE NEXT APPROVAL</button>
+    <button class="btn btn--warn btn--disable">OK</button>
+    <button class="btn btn--danger">TRY AGAIN</button>
+  </div>
+  <div>
+    <button class="btn btn--success btn--size-large">GO TO THE NEXT APPROVAL</button>
+    <!--<button class="btn btn--warn btn--disable">OK</button>-->
+    <button class="btn btn--warn btn--size-large">OK</button>
+    <button class="btn btn--danger btn--size-large">TRY AGAIN</button>
+  </div>
+</body>
+</html>

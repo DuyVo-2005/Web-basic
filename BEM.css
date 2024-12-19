@@ -1,0 +1,54 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+body > div{
+  margin: auto;
+}
+.btn{
+  display: inline-block;
+  text-decoration: none;/*Bỏ gạch dưới*/
+  border: none;/*bỏ viền nút*/
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 12px 48px;
+  margin: auto;
+  border-radius: 50px;/*bo tròn border*/
+  cursor: pointer;/*hình dạng con trỏ khi rê chuột vào nút*/
+  transition: opacity .2s ease;/*hiệu ứng khi nhấn*/
+}
+.btn--size-large{
+  padding: 16px 56px;
+}
+.btn--size-small{
+  padding: 8px 40px;
+}
+.btn:hover{
+  /*làm mờ khi nhấn*/
+  opacity: 0.75;
+}
+.btn + .btn {
+  margin-left: 16px;
+}
+.btn--success{
+  background-color: green;
+}
+.btn--warn{
+  background-color: gold;
+}
+.btn--danger{
+  background-color: red;
+}
+.btn--disable{
+  /*ưu tiên cao hơn*/
+  opacity: 0.5 !important;
+  cursor: default;
+}
