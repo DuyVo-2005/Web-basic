@@ -1,3 +1,4 @@
+![Hình mẫu](12 Columns grid.jpg)
 # Theory
 ![Hình](12 Columns grid.jpg)
 # Example
