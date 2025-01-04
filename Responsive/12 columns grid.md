@@ -1,4 +1,4 @@
 # Theory
-![Hình](Responsive/12 Columns grid.jpg)
+<br> ![Hình](Responsive/12 Columns grid.jpg) <br>
 # Example
-![Hình mẫu](Responsive/12 columns grid example.jpg)
+<br> ![Hình mẫu](Responsive/12 columns grid example.jpg)
