@@ -1,5 +1,5 @@
 # Theory
--12 columns role
+- 12 columns role
 ![Hình](https://github.com/DuyVo-2005/Web-basic/blob/main/Responsive/12%20Columns%20grid.jpg)
 
 - Base responsive
